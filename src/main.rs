@@ -11,3 +11,4 @@ fn main() {
     println!("contents {contents}");
     dbg!(args);
 }
+fn parse_config(args: &[String])
