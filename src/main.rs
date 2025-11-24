@@ -14,7 +14,6 @@ fn main() {
         println!("{e}");
         process::exit(1);
         };
-    dbg!(args);
 }
 fn run(config: Config) -> Result<(),Box<dyn Error>>{
         let contents = fs::read_to_string(config.file_path)?;
@@ -34,8 +33,6 @@ impl Config{
             }
         let query = args[1].clone();
         let file_path = args[2].clone();
-        println!("query {}",query);
-        println!("file {}",file_path);
         Ok(Config{query, file_path})
      }
 }
