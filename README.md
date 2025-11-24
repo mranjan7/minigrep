@@ -1,0 +1,1 @@
+A command line tool in rust mimicking grep command whcih takes search query and file path in argument and shows the lines in the flle matching the query. if IGNORE_CASE environment variable is set to any value it ignores case.
